@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style1.css" >
+      <title>calculatrice</title>
+    </head>
+    <body>
+        <header class="tete">
+            <div class="info">
+            <h1>FATIMA EL OUARDI </h1><br>
+            <h1>Groupe 2 </h1><br>
+            <h1>IAP programmation Web2 </h1><br>
+            <h1 id="visible">Bienvenue</h1>
+            </div>
+        </header>
+        <main id="main">
+        <form id="form">
+            <h2>calculatrice</h2>
+           <div class="cont">
+            <label  for="a">saise la 1ere valeur :</label>
+            <input id="valeur1" type="number" name="a" required><br><br><br></div> 
+
+            <div><label for="b">saise la 2eme valeur :</label>
+            <input  id="valeur2" type="number" name="b" required><br><br><br></div>
+
+            <div><label for="opr">saise l'opérateur :</label>
+            <select id="operateur" name="opr"  required>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select> <br><br><br></div>
+
+            <button type="button"  onclick="calculer()">calculer</button><br><br><br>
+
+            <div><label for="res">le resultat est :</label>
+            <input id="resultat" type="number" name="res"><br><br><br></div>
+              <div id="erreur"></div>
+                  <h3>historique</h3>
+                <ul id="historique"></ul>
+                
+           
+
+        </form>
+        </main>
+        <footer>
+           <p>redigé par FATIMA el OUARDI 2025</p>
+        </footer>
+    </body>
