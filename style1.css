@@ -1,0 +1,53 @@
+.cont{
+    display: grid;
+    gap: 10px;
+}
+.tete{
+ background-color: rgb(5, 92, 159);
+}
+#form{
+  width: 100%;
+  max-width: 400px;
+}
+
+.info{
+    font-size: 20px;
+    font-style:italic;
+    font-weight: bold;
+    border-color: black;
+    border-style: dotted;
+    color: aliceblue;
+    border-width:8px;
+    }
+header #visible{
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+header #visible:hover{
+    visibility: visible;
+    color: aliceblue;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+}
+.info:hover{
+border-color: rgb(2, 48, 104);
+    border-style: solid;
+    transform: scale(0.5);
+  
+}
+#historique{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:600px){
+    h1{
+        font-size: 18px;
+    }
+}
